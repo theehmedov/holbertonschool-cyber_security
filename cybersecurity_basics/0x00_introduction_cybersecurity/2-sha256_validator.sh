@@ -1,3 +1,2 @@
 #!/bin/bash
-DATA="$2  $1"
-echo "$DATA" | sha256sum --check
+echo "$2  $1" | sha256sum --check
