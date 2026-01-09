@@ -1,1 +1,1 @@
-udp.dstport == 40125 && ip.len == 28
+udp.dstport == 40125 && ip.proto == 17
