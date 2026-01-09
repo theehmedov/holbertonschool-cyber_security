@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo namp -sn -PM $!
+sudo nmap -sn -PM $!
