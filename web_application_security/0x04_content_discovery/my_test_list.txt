@@ -1,0 +1,9 @@
+api
+wiki
+admin
+user
+users
+dev
+staging
+beta
+prod
