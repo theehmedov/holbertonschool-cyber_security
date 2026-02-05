@@ -1,2 +1,2 @@
 #!/bin/bash
-john --wordlist=/usr/share/wordlists/rockyou.txt "$1"
+john --format=Raw-MD5 --wordlist=/usr/share/wordlists/rockyou.txt "$1"
