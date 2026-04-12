@@ -1,2 +1,10 @@
 #!/bin/bash
-cat logs.txt | cut -d' ' -f1 | grep '[.]' | sort | uniq -c | tail -1 | cut -d' ' -f5
+
+# Faylın mövcudluğunu yoxlayırıq
+LOG_FILE="logs.txt"
+
+if [ ! -f "$LOG_FILE" ]; then
+    echo "Xəta: $LOG_FILE tapılmadı!"
+    exit 1
+fi
+awk '{print $1}' "$LOG_FILE" | sort | uniq -c | sort -nr | head -n 1 | awk '{print $2}'
