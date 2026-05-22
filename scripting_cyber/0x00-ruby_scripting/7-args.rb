@@ -1,4 +1,4 @@
-odef print_arguments
+def print_arguments
   if ARGV.empty?
     puts "No arguments provided."
   else
@@ -8,4 +8,3 @@ odef print_arguments
     end
   end
 end
-
